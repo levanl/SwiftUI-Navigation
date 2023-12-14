@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: TravelTipModel
 struct TravelTip: Decodable {
     var title: String
 }

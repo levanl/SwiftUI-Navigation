@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: MainScreenView
 struct MainScreenView: View {
     
     var destinations: [Destination] = DestinationService.getMockDestinations()

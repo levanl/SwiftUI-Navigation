@@ -7,7 +7,8 @@
 
 import Foundation
 
-class TravelTipsService {
+// MARK: TravelTipsMockService
+final class TravelTipsService {
     static func getMockTravelTips() -> [TravelTip] {
         let mockJSON = """
         [

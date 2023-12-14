@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+// MARK: DestinationDetailScreenView
 struct DestinationDetailScreen: View {
     var destination: Destination
     
     @Binding var path: NavigationPath
-
+    
     var body: some View {
         VStack {
             Text("Details for \(destination.name)")
@@ -34,7 +35,7 @@ struct DestinationDetailScreen: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.gray, lineWidth: 1)
                         )
-                
+                    
                 }
                 
                 NavigationLink(destination: MustSeeScreen(destination: destination, path: $path)) {

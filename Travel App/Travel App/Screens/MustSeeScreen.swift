@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: MustSeeScreenView
 struct MustSeeScreen: View {
     var destination: Destination
     
@@ -36,6 +37,7 @@ struct MustSeeScreen: View {
     }
 }
 
+// MARK: MustSeeRowView
 struct MustSeeRow: View {
     var mustSeeType: MustSeeType
     

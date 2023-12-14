@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: TransportScreenView
 struct TransportScreen: View {
     var destination: Destination
     
@@ -35,6 +36,7 @@ struct TransportScreen: View {
     }
 }
 
+// MARK: TransportRowView
 struct TransportRow: View {
     var transportType: TransportType
     

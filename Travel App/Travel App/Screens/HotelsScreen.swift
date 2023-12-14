@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: HotelsScreenView
 struct HotelsScreen: View {
     var destination: Destination
     
@@ -35,8 +36,7 @@ struct HotelsScreen: View {
     }
 }
 
-
-
+// MARK: HotelsRowView
 struct HotelRow: View {
     var hotelType: HotelType
     
