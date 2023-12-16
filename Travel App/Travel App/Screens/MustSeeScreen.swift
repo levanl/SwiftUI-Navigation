@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-// MARK: MustSeeScreenView
 struct MustSeeScreen: View {
+    // MARK: Properties
     var destination: Destination
     
     @Binding var path: NavigationPath
     
+    // MARK: Body
     var body: some View {
         VStack {
             List(destination.mustSeeInfo, id: \.self) { mustSeeType in

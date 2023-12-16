@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-// MARK: HotelsScreenView
+
 struct HotelsScreen: View {
+    // MARK: Properties
     var destination: Destination
     
     @Binding var path: NavigationPath
     
+    // MARK: Body
     var body: some View {
         VStack {
             List(destination.hotelInfo, id: \.self) { hotelType in

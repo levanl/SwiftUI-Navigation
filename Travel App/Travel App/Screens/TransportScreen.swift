@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-// MARK: TransportScreenView
 struct TransportScreen: View {
+    // MARK: Properties
     var destination: Destination
     
     @Binding var path: NavigationPath
     
+    // MARK: Body
     var body: some View {
         VStack {
             List(destination.transportInfo, id: \.self) { transportType in

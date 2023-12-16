@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-// MARK: MainScreenView
 struct MainScreenView: View {
-    
+    // MARK: Properties
     var destinations: [Destination] = DestinationService.getMockDestinations()
     
     var travelTips: [TravelTip] = TravelTipsService.getMockTravelTips()
@@ -18,6 +17,11 @@ struct MainScreenView: View {
     
     @State private var showingAlert = false
     
+    let columns = [
+            GridItem(.adaptive(minimum: 80))
+        ]
+    
+    // MARK: Body
     var body: some View {
         NavigationStack(path: $path) {
             List(destinations, id: \.self) { destination in

@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-// MARK: DestinationDetailScreenView
 struct DestinationDetailScreen: View {
+    // MARK: Properties
     var destination: Destination
     
     @Binding var path: NavigationPath
     
+    // MARK: Body
     var body: some View {
         VStack {
             Text("Details for \(destination.name)")
